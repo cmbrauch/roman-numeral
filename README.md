@@ -12,64 +12,23 @@ The purpose of this project is to convert any inputted number between a value of
 
 ## Specs
 
-The program does not allow for anything other than numbers to be entered
-* Example Input: a
-* Example Output: --
-
- Program only allows less than or equal to 3999
-* Example Input: 4000
-* Example Output: --
-
- Progam only allows numbers greater than 0
-* Example Input: 0
-* Example Output: --
-
- Program turns number 1 into I
-* Example Input: 1
-* Example Output: I 
-
- Program turns number 5 into V
-* Example Input: 5
-* Example Output: V 
-
- Program turns number 10 into X
-* Example Input: 10
-* Example Output: X
-
- Program turns number 50 into L
-* Example Input: 50
-* Example Output: L
-
- Program turns number 100 into C
-* Example Input: 100
-* Example Output: C
-
- Program turns number 500 into D
-* Example Input: 500
-* Example Output: D
-
- Program turns number 1000 into M
-* Example Input: 1000
-* Example Output: M
-
- Program allows V, L, D only once consecutively in a numeral
-* Example Input: 55
-* Example Output: LV
-
- Program allows I, X, C, M only three times consecutively in a numeral
-
- * Example Input: 9, 99
- * Example Output: IX, XCIX
-
- In situations where there would be 3 or more consecutive numerals, numerals instead subtract from the nearest largest numeral
-
- * Example Input: 39, 40
- * Example Output: XXXIX, XV
-
- The program separates numerals into ones, tens, hundreds, and thousands
-
-  *  Example Input: 99
-  * Example Output: XCIX
+| Behavior                                                                                                            | Input     | Output       |
+|---------------------------------------------------------------------------------------------------------------------|-----------|--------------|
+| The program does not allow for anything other than numbers to be entered                                            | a         | --           |
+| Program only allows less than or equal to 3999                                                                      | 4000      | --           |
+| Progam only allows numbers greater than 0                                                                           | 0         | --           |
+| Program turns number 1 into I                                                                                       | 1         | I            |
+| Program turns number 5 into V                                                                                       | 5         | V            |
+| Program turns 10 into X                                                                                             | 10        | X            |
+| Program turns 50 into L                                                                                             | 50        | L            |
+| Program turns 100 into C                                                                                            | 100       | C            |
+| Program turns 500 into D                                                                                            | 500       | D            |
+| Program turns 1000 into M                                                                                           | 1000      | M            |
+| Allow V, L, D only once consecutively in a numeral                                                                  | 55        | LV           |
+| Allow I, X, C, M only three times consecutively in a numeral                                                        | 9, 40, 99 | IX, XL, XCIX |
+| For numbers between 1 and 10,  subtract instead of add from multiples of 5 to avoid three consecutive numerals      | 4, 9      | IV, IX       |
+| For numbers between 1 and 100, subtract instead of add from multiples of 50 to avoid three consecutive numerals     | 40, 90    | XL, XC       |
+| For numbers between 100 and 1000, subtract instead of add from multiples of 500 to avoid three consecutive numerals | 400, 900  | CD, CM       |
 
 ## Known Bugs
 

@@ -41,6 +41,11 @@ $(document).ready(function(){
     event.preventDefault();
     let inputNumber = parseInt($("#number").val());
     let outputNumeral = getNumeral(inputNumber);
-    $("#result").text(outputNumeral);
+    let regex = /^[0-9]*$/;
+    if (regex.test(inputNumber) === true && inputNumber > 0 && inputNumber <= 3999){
+      $("#result").text(outputNumeral);
+    } else {
+      $("#result").text("Please enter a number between 1 and 3999.");
+    }
   });
-});
+}); 
