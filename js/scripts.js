@@ -1,5 +1,3 @@
-
-
 function getNumeral (inputNumber) {
   let currentNumber = inputNumber;
   let currentNumeral = "";
@@ -37,3 +35,12 @@ function checkNumber (inputNumber) {
     }
   }
 }
+
+$(document).ready(function(){
+  $("form#numberInput").submit(function(event){
+    event.preventDefault();
+    let inputNumber = parseInt($("#number").val());
+    let outputNumeral = getNumeral(inputNumber);
+    $("#result").text(outputNumeral);
+  });
+});

@@ -1,14 +1,14 @@
-#### By _**Chris Brauch**_
+#### By _**Peter Grimm, Spencer Moody, Chris Brauch**, June 11th, 2020_
 
 ## Description
 
-The purpose of this project is to FILL IN RELEVANT INFORMATION HERE.
+The purpose of this project is to convert any inputted number between a value of 1-3999 into a roman numeral.
 
 ## Setup/Installation Requirements
 
-* _Clone this repository on https://github.com/cmbrauch/TITLE.git
+* _Clone this repository on https://github.com/cmbrauch/roman-numeral.git
 * _Open it in VS Code_
-* _Run the command open index.html or go to cmbrauch.github.io/TITLE
+* _Run the command open index.html or go to cmbrauch.github.io/roman-numeral
 
 ## Specs
 
